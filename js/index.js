@@ -15393,7 +15393,6 @@ var OnlineMarkdown = {
       },
       timeout: 2000
     }).then(function(data) {
-      alert(params.content)
       if(params.content){
         data = params.content;
       }
