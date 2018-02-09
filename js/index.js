@@ -15394,7 +15394,7 @@ var OnlineMarkdown = {
       timeout: 2000
     }).then(function(data) {
       if(params.content){
-        data = params.content;
+        data = decodeURIComponent(params.content);
       }
       $('#input').val(data);
     });
