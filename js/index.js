@@ -15394,7 +15394,7 @@ var OnlineMarkdown = {
       timeout: 2000
     }).then(function(data) {
       if(params.content){
-        data = decodeURIComponent(params.content);
+        data = decodeURIComponent(params.content.replace(new RegExp('%20', 'g'),'%0A'));
       }
       $('#input').val(data);
     });
