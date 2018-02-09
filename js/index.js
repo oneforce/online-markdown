@@ -15395,7 +15395,7 @@ var OnlineMarkdown = {
     }).then(function(data) {
       if(params.content){
 	console.log(params.content);
-        data = decodeURIComponent(params.content.replace(new RegExp('%20', 'g'),'%0A'));
+        data = decodeURIComponent(params.content);
       }
       $('#input').val(data);
     });
